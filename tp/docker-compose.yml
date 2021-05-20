@@ -1,0 +1,14 @@
+version: '3.3'
+services:
+  database:
+    image: mariadb:latest
+    restart: always
+    ports:
+      - 3306:3306
+    volumes:
+        - ./mariaDb:/docker-entrypoint-initdb.d/:ro
+    environment:
+        MYSQL_ROOT_PASSWORD: root
+        MYSQL_USER: jbdumaine
+        MYSQL_PASSWORD: jbdumaine
+        
