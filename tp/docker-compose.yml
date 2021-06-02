@@ -11,4 +11,6 @@ services:
         MYSQL_ROOT_PASSWORD: root
         MYSQL_USER: jbdumaine
         MYSQL_PASSWORD: jbdumaine
+        MYSQL_DATABASE: classicmodels
+
         
